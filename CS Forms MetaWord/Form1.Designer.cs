@@ -119,7 +119,7 @@
             this.rtbTextEditor.Location = new System.Drawing.Point(3, 3);
             this.rtbTextEditor.Name = "rtbTextEditor";
             this.rtbTextEditor.Size = new System.Drawing.Size(820, 627);
-            this.rtbTextEditor.TabIndex = 3;
+            this.rtbTextEditor.TabIndex = 0;
             this.rtbTextEditor.Text = "";
             // 
             // btnClear
@@ -130,7 +130,7 @@
             this.btnClear.Location = new System.Drawing.Point(3, 636);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(283, 89);
-            this.btnClear.TabIndex = 4;
+            this.btnClear.TabIndex = 1;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
