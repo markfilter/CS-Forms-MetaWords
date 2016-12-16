@@ -123,6 +123,7 @@
             this.rtbTextEditor.Size = new System.Drawing.Size(820, 627);
             this.rtbTextEditor.TabIndex = 0;
             this.rtbTextEditor.Text = "";
+            this.rtbTextEditor.TextChanged += new System.EventHandler(this.rtbTextEditor_TextChanged);
             // 
             // btnClear
             // 
