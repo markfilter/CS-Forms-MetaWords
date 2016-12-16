@@ -32,12 +32,12 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.tsBtnClear = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.statusLabelWordCount = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusLabelCharCount = new System.Windows.Forms.ToolStripStatusLabel();
+            this.rtbTextEditor = new System.Windows.Forms.RichTextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -67,79 +67,79 @@
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(298, 42);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(176, 42);
             this.quitToolStripMenuItem.Text = "Quit";
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(36, 36);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.tsBtnClear});
             this.toolStrip1.Location = new System.Drawing.Point(0, 45);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(826, 44);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // tsBtnClear
             // 
-            this.toolStripButton1.Image = global::CS_Forms_MetaWord.Properties.Resources.btn_clear;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(118, 41);
-            this.toolStripButton1.Text = "Clear";
+            this.tsBtnClear.Image = global::CS_Forms_MetaWord.Properties.Resources.btn_clear;
+            this.tsBtnClear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtnClear.Name = "tsBtnClear";
+            this.tsBtnClear.Size = new System.Drawing.Size(118, 41);
+            this.tsBtnClear.Text = "Clear";
             // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(36, 36);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
+            this.statusLabelWordCount,
+            this.statusLabelCharCount});
             this.statusStrip1.Location = new System.Drawing.Point(0, 1019);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(826, 42);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // statusLabelWordCount
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(255, 37);
-            this.toolStripStatusLabel1.Text = "Word Count: 10,000";
+            this.statusLabelWordCount.Name = "statusLabelWordCount";
+            this.statusLabelWordCount.Size = new System.Drawing.Size(255, 38);
+            this.statusLabelWordCount.Text = "Word Count: 10,000";
             // 
-            // toolStripStatusLabel2
+            // statusLabelCharCount
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(303, 37);
-            this.toolStripStatusLabel2.Text = "Character Count: 10,000";
+            this.statusLabelCharCount.Name = "statusLabelCharCount";
+            this.statusLabelCharCount.Size = new System.Drawing.Size(303, 37);
+            this.statusLabelCharCount.Text = "Character Count: 10,000";
             // 
-            // richTextBox1
+            // rtbTextEditor
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(820, 627);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.rtbTextEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbTextEditor.Location = new System.Drawing.Point(3, 3);
+            this.rtbTextEditor.Name = "rtbTextEditor";
+            this.rtbTextEditor.Size = new System.Drawing.Size(820, 627);
+            this.rtbTextEditor.TabIndex = 3;
+            this.rtbTextEditor.Text = "";
             // 
-            // button1
+            // btnClear
             // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(3, 636);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(283, 89);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.Tomato;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClear.Location = new System.Drawing.Point(3, 636);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(283, 89);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.rtbTextEditor, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnClear, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 89);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -180,12 +180,12 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton tsBtnClear;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabelWordCount;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabelCharCount;
+        private System.Windows.Forms.RichTextBox rtbTextEditor;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
