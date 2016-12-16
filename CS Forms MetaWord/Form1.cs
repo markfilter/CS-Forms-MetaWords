@@ -15,6 +15,8 @@ namespace CS_Forms_MetaWord
         public Form1()
         {
             InitializeComponent();
+            statusLabelWordCount.Text = "Word Count: 0";
+            statusLabelCharCount.Text = "Character Count: 0";
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
