@@ -16,5 +16,20 @@ namespace CS_Forms_MetaWord
         {
             InitializeComponent();
         }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void tsBtnClear_Click(object sender, EventArgs e)
+        {
+            rtbTextEditor.Text = "";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            rtbTextEditor.Text = "";
+        }
     }
 }

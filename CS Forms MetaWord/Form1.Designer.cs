@@ -61,14 +61,15 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(70, 41);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(70, 43);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(176, 42);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(298, 42);
             this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -88,6 +89,7 @@
             this.tsBtnClear.Name = "tsBtnClear";
             this.tsBtnClear.Size = new System.Drawing.Size(118, 41);
             this.tsBtnClear.Text = "Clear";
+            this.tsBtnClear.Click += new System.EventHandler(this.tsBtnClear_Click);
             // 
             // statusStrip1
             // 
@@ -133,6 +135,7 @@
             this.btnClear.TabIndex = 1;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // tableLayoutPanel1
             // 
