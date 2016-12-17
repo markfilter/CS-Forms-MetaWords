@@ -16,5 +16,10 @@ namespace CS_Forms_Notes_App
         {
             InitializeComponent();
         }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
