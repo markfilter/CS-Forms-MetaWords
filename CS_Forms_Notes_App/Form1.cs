@@ -20,7 +20,7 @@ namespace CS_Forms_Notes_App
         {
             InitializeComponent();
             this.Size = new Size(1000, 600);
-            generateTestData(10);
+            generateTestData(30);
             loadNotesListView();
         }
 
@@ -44,6 +44,15 @@ namespace CS_Forms_Notes_App
         private void notesListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             // populate Note Details Fields
+            if(notesListView.SelectedItems.Count != 0)
+            {
+                Note selectedNote = notesListView.SelectedItems[0].Tag as Note;
+                contentEditor.Text = selectedNote.Content;
+            }
+            else
+            {
+                contentEditor.Text = "";
+            }
         }
         //------------------------------------------------------------------------------------
 
@@ -62,7 +71,7 @@ namespace CS_Forms_Notes_App
         private void generateTestData(int max)
         {
             Random randomgenerator = new Random();
-            int total = randomgenerator.Next(max);
+            int total = randomgenerator.Next(5, max);
             for(int i=0; i < total; i++)
             {
                 Note noteToAdd = new Note();
