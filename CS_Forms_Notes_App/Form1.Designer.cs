@@ -35,8 +35,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.notesListView = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.addBtn = new System.Windows.Forms.Button();
-            this.trashBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.newBtn = new System.Windows.Forms.Button();
             this.contentEditor = new System.Windows.Forms.RichTextBox();
             this.editorToolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -58,7 +58,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1733, 45);
+            this.menuStrip1.Size = new System.Drawing.Size(2108, 45);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,7 +67,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(70, 43);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(70, 41);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // quitToolStripMenuItem
@@ -92,8 +92,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.contentEditor);
             this.splitContainer1.Panel2.Controls.Add(this.editorToolStrip);
-            this.splitContainer1.Size = new System.Drawing.Size(1733, 1100);
-            this.splitContainer1.SplitterDistance = 577;
+            this.splitContainer1.Size = new System.Drawing.Size(2108, 1100);
+            this.splitContainer1.SplitterDistance = 701;
             this.splitContainer1.TabIndex = 1;
             // 
             // notesListView
@@ -101,7 +101,7 @@
             this.notesListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.notesListView.Location = new System.Drawing.Point(0, 0);
             this.notesListView.Name = "notesListView";
-            this.notesListView.Size = new System.Drawing.Size(577, 1000);
+            this.notesListView.Size = new System.Drawing.Size(701, 1000);
             this.notesListView.TabIndex = 1;
             this.notesListView.UseCompatibleStateImageBehavior = false;
             this.notesListView.View = System.Windows.Forms.View.List;
@@ -110,38 +110,40 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panel1.Controls.Add(this.addBtn);
-            this.panel1.Controls.Add(this.trashBtn);
+            this.panel1.Controls.Add(this.deleteBtn);
+            this.panel1.Controls.Add(this.newBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1000);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(577, 100);
+            this.panel1.Size = new System.Drawing.Size(701, 100);
             this.panel1.TabIndex = 0;
             // 
-            // addBtn
+            // deleteBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(484, 7);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(90, 90);
-            this.addBtn.TabIndex = 1;
-            this.addBtn.Text = "button2";
-            this.addBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.BackColor = System.Drawing.Color.Tomato;
+            this.deleteBtn.Location = new System.Drawing.Point(490, 7);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(208, 90);
+            this.deleteBtn.TabIndex = 1;
+            this.deleteBtn.Text = "DELETE";
+            this.deleteBtn.UseVisualStyleBackColor = false;
             // 
-            // trashBtn
+            // newBtn
             // 
-            this.trashBtn.Location = new System.Drawing.Point(3, 7);
-            this.trashBtn.Name = "trashBtn";
-            this.trashBtn.Size = new System.Drawing.Size(90, 90);
-            this.trashBtn.TabIndex = 0;
-            this.trashBtn.Text = "button1";
-            this.trashBtn.UseVisualStyleBackColor = true;
+            this.newBtn.BackColor = System.Drawing.Color.PaleGreen;
+            this.newBtn.Location = new System.Drawing.Point(3, 7);
+            this.newBtn.Name = "newBtn";
+            this.newBtn.Size = new System.Drawing.Size(185, 90);
+            this.newBtn.TabIndex = 0;
+            this.newBtn.Text = "NEW";
+            this.newBtn.UseVisualStyleBackColor = false;
             // 
             // contentEditor
             // 
             this.contentEditor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contentEditor.Location = new System.Drawing.Point(0, 43);
             this.contentEditor.Name = "contentEditor";
-            this.contentEditor.Size = new System.Drawing.Size(1152, 1057);
+            this.contentEditor.Size = new System.Drawing.Size(1403, 1057);
             this.contentEditor.TabIndex = 1;
             this.contentEditor.Text = "";
             // 
@@ -154,7 +156,7 @@
             this.labelLastModified});
             this.editorToolStrip.Location = new System.Drawing.Point(0, 0);
             this.editorToolStrip.Name = "editorToolStrip";
-            this.editorToolStrip.Size = new System.Drawing.Size(1152, 43);
+            this.editorToolStrip.Size = new System.Drawing.Size(1403, 43);
             this.editorToolStrip.TabIndex = 0;
             this.editorToolStrip.Text = "toolStrip1";
             // 
@@ -182,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1733, 1145);
+            this.ClientSize = new System.Drawing.Size(2108, 1145);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -211,8 +213,8 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ListView notesListView;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button addBtn;
-        private System.Windows.Forms.Button trashBtn;
+        private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Button newBtn;
         private System.Windows.Forms.RichTextBox contentEditor;
         private System.Windows.Forms.ToolStrip editorToolStrip;
         private System.Windows.Forms.ToolStripButton toolStripButton1;

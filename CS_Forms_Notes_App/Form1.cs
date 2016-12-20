@@ -12,19 +12,75 @@ namespace CS_Forms_Notes_App
 {
     public partial class Form1 : Form
     {
+        // Main Form Member Variables
+        List<Note> noteStack = new List<Note>();
+
+
         public Form1()
         {
             InitializeComponent();
+            this.Size = new Size(1000, 600);
+            generateTestData(10);
+            loadNotesListView();
         }
 
-        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        //------------------------------------------------------------------------------------
+        // NotesListView
+        //------------------------------------------------------------------------------------
+        private void loadNotesListView()
         {
-            Application.Exit();
+            if(noteStack.Count > 0)
+            {
+                foreach(Note note in noteStack)
+                {
+                    ListViewItem noteItem = new ListViewItem();
+                    noteItem.Tag = note;
+                    noteItem.Text = note.Title + "    " + note.LastModified.ToString();
+                    notesListView.Items.Add(noteItem);
+                }             
+            }
         }
 
         private void notesListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             // populate Note Details Fields
+        }
+        //------------------------------------------------------------------------------------
+
+
+        //------------------------------------------------------------------------------------
+        // FILE > QUIT
+        //------------------------------------------------------------------------------------
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //------------------------------------------------------------------------------------
+
+
+
+        private void generateTestData(int max)
+        {
+            Random randomgenerator = new Random();
+            int total = randomgenerator.Next(max);
+            for(int i=0; i < total; i++)
+            {
+                Note noteToAdd = new Note();
+                noteToAdd.Content = "She exposed painted fifteen are noisier mistake led waiting. " +
+                    "Surprise not wandered speedily husbands although yet end. Are court tiled " +
+                    "cease young built fat one man taken. We highest ye friends is exposed equally in. " +
+                    "Ignorant had too strictly followed. Astonished as travelling assistance or " +
+                    "unreserved oh pianoforte ye. Five with seen put need tore add neat. Bringing it " +
+                    "is he returned received raptures.\n\n" + "Compliment interested discretion estimating " +
+                    "on stimulated apartments oh. Dear so sing when in find read of call. As distrusts " +
+                    "behaviour abilities defective is. Never at water me might.On formed merits hunted " +
+                    "unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly.";
+                noteToAdd.Title = noteToAdd.Content.Substring(0, 12);
+                noteToAdd.LastModified = new DateTime();
+                noteStack.Add(noteToAdd);
+            }
+
+
         }
     }
 }
