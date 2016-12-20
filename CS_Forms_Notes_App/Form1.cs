@@ -21,5 +21,10 @@ namespace CS_Forms_Notes_App
         {
             Application.Exit();
         }
+
+        private void notesListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // populate Note Details Fields
+        }
     }
 }

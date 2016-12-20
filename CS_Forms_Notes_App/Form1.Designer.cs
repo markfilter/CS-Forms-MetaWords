@@ -33,13 +33,13 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.trashBtn = new System.Windows.Forms.Button();
-            this.addBtn = new System.Windows.Forms.Button();
             this.notesListView = new System.Windows.Forms.ListView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.addBtn = new System.Windows.Forms.Button();
+            this.trashBtn = new System.Windows.Forms.Button();
+            this.contentEditor = new System.Windows.Forms.RichTextBox();
             this.editorToolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.contentEditor = new System.Windows.Forms.RichTextBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.labelLastModified = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
@@ -67,7 +67,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(70, 41);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(70, 43);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // quitToolStripMenuItem
@@ -96,6 +96,17 @@
             this.splitContainer1.SplitterDistance = 577;
             this.splitContainer1.TabIndex = 1;
             // 
+            // notesListView
+            // 
+            this.notesListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.notesListView.Location = new System.Drawing.Point(0, 0);
+            this.notesListView.Name = "notesListView";
+            this.notesListView.Size = new System.Drawing.Size(577, 1000);
+            this.notesListView.TabIndex = 1;
+            this.notesListView.UseCompatibleStateImageBehavior = false;
+            this.notesListView.View = System.Windows.Forms.View.List;
+            this.notesListView.SelectedIndexChanged += new System.EventHandler(this.notesListView_SelectedIndexChanged);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
@@ -107,15 +118,6 @@
             this.panel1.Size = new System.Drawing.Size(577, 100);
             this.panel1.TabIndex = 0;
             // 
-            // trashBtn
-            // 
-            this.trashBtn.Location = new System.Drawing.Point(3, 7);
-            this.trashBtn.Name = "trashBtn";
-            this.trashBtn.Size = new System.Drawing.Size(90, 90);
-            this.trashBtn.TabIndex = 0;
-            this.trashBtn.Text = "button1";
-            this.trashBtn.UseVisualStyleBackColor = true;
-            // 
             // addBtn
             // 
             this.addBtn.Location = new System.Drawing.Point(484, 7);
@@ -125,15 +127,23 @@
             this.addBtn.Text = "button2";
             this.addBtn.UseVisualStyleBackColor = true;
             // 
-            // notesListView
+            // trashBtn
             // 
-            this.notesListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.notesListView.Location = new System.Drawing.Point(0, 0);
-            this.notesListView.Name = "notesListView";
-            this.notesListView.Size = new System.Drawing.Size(577, 1000);
-            this.notesListView.TabIndex = 1;
-            this.notesListView.UseCompatibleStateImageBehavior = false;
-            this.notesListView.View = System.Windows.Forms.View.List;
+            this.trashBtn.Location = new System.Drawing.Point(3, 7);
+            this.trashBtn.Name = "trashBtn";
+            this.trashBtn.Size = new System.Drawing.Size(90, 90);
+            this.trashBtn.TabIndex = 0;
+            this.trashBtn.Text = "button1";
+            this.trashBtn.UseVisualStyleBackColor = true;
+            // 
+            // contentEditor
+            // 
+            this.contentEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentEditor.Location = new System.Drawing.Point(0, 43);
+            this.contentEditor.Name = "contentEditor";
+            this.contentEditor.Size = new System.Drawing.Size(1152, 1057);
+            this.contentEditor.TabIndex = 1;
+            this.contentEditor.Text = "";
             // 
             // editorToolStrip
             // 
@@ -156,15 +166,6 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(40, 40);
             this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // contentEditor
-            // 
-            this.contentEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentEditor.Location = new System.Drawing.Point(0, 43);
-            this.contentEditor.Name = "contentEditor";
-            this.contentEditor.Size = new System.Drawing.Size(1152, 1057);
-            this.contentEditor.TabIndex = 1;
-            this.contentEditor.Text = "";
             // 
             // toolStripSeparator1
             // 
