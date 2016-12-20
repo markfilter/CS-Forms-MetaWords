@@ -12,6 +12,22 @@ namespace CS_Forms_Notes_App
 {
     public partial class Form1 : Form
     {
+        /* ===================================================================================
+         * TODO LIST
+         * ---------
+         * Add functionality to create a new note
+         * Add functionality to delete a note
+         * Update note content to contentEditor.Text
+         * Update last modified to be the date/time of when a note was last edited (content changed)
+         * Add an icon for a note
+         * Integrate a SaveFileDialog
+         * Integrate an OpenFileDialog
+         * ===================================================================================
+         */ 
+
+
+
+
         // Main Form Member Variables
         List<Note> noteStack = new List<Note>();
 
